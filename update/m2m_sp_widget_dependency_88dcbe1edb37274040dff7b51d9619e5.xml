@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="Mustache JS">aebcbe1edb37274040dff7b51d9619de</sp_dependency>
+        <sp_widget display_value="Mustache Playground">5eea3adadb37274040dff7b51d961983</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2019-02-25 18:02:52</sys_created_on>
+        <sys_id>88dcbe1edb37274040dff7b51d9619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mustache JS.Mustache Playground</sys_name>
+        <sys_package display_value="Mustache Templating" source="x_snc_mustache_tem">d0dabed6db37274040dff7b51d961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mustache Templating">d0dabed6db37274040dff7b51d961991</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_88dcbe1edb37274040dff7b51d9619e5</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2019-02-25 18:02:52</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

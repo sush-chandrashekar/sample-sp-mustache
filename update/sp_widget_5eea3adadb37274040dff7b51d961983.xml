@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function mustachePlay($http) {
+  /* widget controller */
+  var c = this;
+//get data from user table
+$http.get('/api/now/table/sys_user?sysparm_query=active%3Dtrue%5Efirst_nameSTARTSWITHjoe&sysparm_limit=10').then(function(response){
+  var data = {
+    employees : response.data.result
+  };
+
+var template = "<h3>Users:</h3><ul class='employees'>{{#employees}}" +
+                            "<li>{{first_name}} {{last_name}}</li>" +
+                            "{{/employees}}</ul>";
+var html = Mustache.to_html(template, data);
+$('#sampleArea').html(html);
+
+});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.mustache{
+background-color:#fff;
+padding:20px;
+  ul{
+    li{
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mustache_playground</id>
+        <internal>false</internal>
+        <link/>
+        <name>Mustache Playground</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2019-02-25 17:56:00</sys_created_on>
+        <sys_id>5eea3adadb37274040dff7b51d961983</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Mustache Playground</sys_name>
+        <sys_package display_value="Mustache Templating" source="x_snc_mustache_tem">d0dabed6db37274040dff7b51d961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mustache Templating">d0dabed6db37274040dff7b51d961991</sys_scope>
+        <sys_update_name>sp_widget_5eea3adadb37274040dff7b51d961983</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2019-02-25 19:55:18</sys_updated_on>
+        <template><![CDATA[<div class="mustache">
+<div id="sampleArea"></div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

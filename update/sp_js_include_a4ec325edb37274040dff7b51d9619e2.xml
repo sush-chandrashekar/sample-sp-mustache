@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>Mustache JS</display_name>
+        <source>local</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2019-02-25 18:04:00</sys_created_on>
+        <sys_id>a4ec325edb37274040dff7b51d9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mustache JS</sys_name>
+        <sys_package display_value="Mustache Templating" source="x_snc_mustache_tem">d0dabed6db37274040dff7b51d961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mustache Templating">d0dabed6db37274040dff7b51d961991</sys_scope>
+        <sys_ui_script display_value="x_snc_mustache_tem.Mustache JS">0ffcb25edb37274040dff7b51d96192e</sys_ui_script>
+        <sys_update_name>sp_js_include_a4ec325edb37274040dff7b51d9619e2</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2019-02-25 18:04:00</sys_updated_on>
+        <url/>
+    </sp_js_include>
+</record_update>
